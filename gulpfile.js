@@ -65,7 +65,7 @@ function images() {
 }
 
 function watcher(done) {
-  gulp.watch(dirs.src.html, gulp.series(html));
+  gulp.watch('./src/**/*.pug', gulp.series(html));
   gulp.watch('./src/sass/**/*.scss', gulp.series(scssCompile));
   gulp.watch(dirs.src.imgs, gulp.series(images));
   done();

@@ -1,0 +1,56 @@
+.features {
+  text-align: center;
+  padding-top: 62px;
+}
+
+.features__wrapper {}
+
+.features__pre-title {}
+
+.features__title {}
+
+.features__card-container {
+  display: flex;
+  padding: 54px 0;
+}
+
+.features__card {
+  text-align: center;
+  padding: 20px;
+}
+
+.features__icon {
+  display: inline-block;
+  width: 88px;
+  height: 88px;
+  border: 1px solid #e0e0e0;
+  border-radius: 88px;
+
+  &--monitor {
+    background: url($img-path + 'monitor.png') center no-repeat;
+  }
+
+  &--gear {
+    background: url($img-path + 'gear.png') center no-repeat;
+  }
+
+  &--like {
+    background: url($img-path + 'like.png') center no-repeat;
+  }
+
+  &--phone {
+    background: url($img-path + 'phone.png') center no-repeat;
+  }
+}
+
+.features__card-title {
+  font-size: 24px;
+  color: $dark-color;
+  padding: 22px 0;
+}
+
+.features__card-text {
+  color: $gray-color;
+  line-height: 26px;
+  font-size: 18px;
+}

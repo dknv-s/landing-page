@@ -1,0 +1,50 @@
+.page-header {
+  background-color: #15141a;
+  background-image: url($img-path + 'header_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-header__wrapper {
+  padding-bottom: 110px;
+  background: url($img-path + 'smartphones.png') right bottom no-repeat;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.header__nav {}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 24px;
+}
+
+.page-header__content-wrap {
+  width: 480px;
+  padding-top: 60px;
+}
+
+.page-header__title {
+  padding-top: 20px;
+}
+
+.page-header__text {
+  color: $gray-color;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 20px;
+}
+
+.page-header__button {
+  margin-top: 60px;
+  margin-right: 20px;
+}

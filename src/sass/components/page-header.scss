@@ -9,7 +9,6 @@
 .page-header__wrapper {
   padding-bottom: 110px;
   background: url($img-path + 'smartphones.png') right bottom no-repeat;
-
 }
 
 .header {
@@ -29,7 +28,7 @@
 }
 
 .page-header__content-wrap {
-  width: 480px;
+  max-width: 480px;
   padding-top: 60px;
 }
 
@@ -45,4 +44,16 @@
 .page-header__button {
   margin-top: 60px;
   margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .page-header__wrapper {
+    background: none;
+  }
+
+  .page-header__content-wrap {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+  }
 }

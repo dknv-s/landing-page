@@ -13,7 +13,9 @@
 }
 
 .contact__item {
-  padding: 60px 100px;
+  padding: 60px 10px;
+  width: 380px;
+  box-sizing: border-box;
 }
 
 .contact__icon {
@@ -38,4 +40,11 @@
   font-size: 18px;
   line-height: 26px;
   color: $gray-color;
+}
+
+@media (max-width: 992px) {
+  .contact__items-wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
 }

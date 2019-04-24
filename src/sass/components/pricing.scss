@@ -1,0 +1,52 @@
+.pricing {
+  padding: 60px 0;
+}
+
+.pricing__wrapper {
+  text-align: center;
+}
+
+.pricing__card-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.pricing__card {
+  border: 1px solid #e0e0e0;
+  width: calc((100% - 90px)/4);
+}
+
+.pricing__plan-name {
+  border-bottom: 1px solid #e0e0e0;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: $dark-color;
+  padding: 25px 0;
+}
+
+.pricing__cost {
+  font-size: 48px;
+  font-weight: 600;
+  color: $dark-color;
+  padding-top: 35px;
+}
+
+.pricing__period {
+  font-size: 18px;
+  color: $gray-color;
+  padding-bottom: 35px;
+}
+
+.pricing__description {
+  border-top: 1px solid #e0e0e0;
+  padding: 52px 30px 0;
+  color: $gray-color;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.pricing__order-button {
+  margin: 44px 0 29px;
+}

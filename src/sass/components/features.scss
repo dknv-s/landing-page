@@ -17,6 +17,8 @@
 .features__card {
   text-align: center;
   padding: 20px;
+  box-sizing: border-box;
+  width: 285px;
 }
 
 .features__icon {
@@ -53,4 +55,19 @@
   color: $gray-color;
   line-height: 26px;
   font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .features__card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features__card {
+    // flex-shrink: 0;
+    width: 50%;
+    flex-grow: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

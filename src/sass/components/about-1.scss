@@ -11,12 +11,10 @@
 
 .about-1__on-phone-view {
   width: 50%;
-  // flex-shrink: 0;
 }
 
 .about-1__content-wrapper {
   width: 50%;
-  // flex-grow: 0;
   padding-top: 53px;
 }
 
@@ -40,9 +38,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .about-1__on-phone-view {
     width: 520px
   }
+
   .about-1__content-wrapper {
     width: 80%;
     padding-bottom: 40px;

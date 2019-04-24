@@ -49,3 +49,22 @@
   font-size: 16px;
   font-weight: 700;
 }
+
+@media (max-width: 992px) {
+  .testimonials__items-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .testimonials__item {
+    width: 80%;
+  }
+
+  .testimonials__item:first-child {
+    margin-bottom: 30px;
+  }
+
+  .testimonials__author-wrapper {
+    justify-content: center;
+  }
+}

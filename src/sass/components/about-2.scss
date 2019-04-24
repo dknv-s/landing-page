@@ -6,15 +6,16 @@
 
 .about-2__wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
-.about-2__on-phone-view {}
+.about-2__on-phone-view {
+  width: 50%;
+}
 
 .about-2__content-wrapper {
   width: 466px;
-  padding-top: 53px;
 }
 
 .about-2__text {

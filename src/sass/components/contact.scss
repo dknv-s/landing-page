@@ -1,0 +1,41 @@
+.contact {
+  background-color: #ededed;
+  padding-top: 60px;
+}
+
+.contact__wrapper {
+  text-align: center;
+}
+
+.contact__items-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__item {
+  padding: 60px 100px;
+}
+
+.contact__icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+
+  &--phone {
+    background: url($img-path + 'phone.png') center no-repeat;
+  }
+
+  &--pointer {
+    background: url($img-path + 'pointer.png') center no-repeat;
+  }
+
+  &--mail {
+    background: url($img-path + 'mail.png') center no-repeat;
+  }
+}
+
+.contact__text {
+  font-size: 18px;
+  line-height: 26px;
+  color: $gray-color;
+}

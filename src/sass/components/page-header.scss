@@ -39,7 +39,10 @@
 
 .page-header__button {
   margin-top: 60px;
-  margin-right: 20px;
+  
+  &:first-of-type {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 992px) {

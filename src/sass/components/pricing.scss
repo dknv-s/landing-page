@@ -50,3 +50,15 @@
 .pricing__order-button {
   margin: 44px 0 29px;
 }
+
+@media (max-width: 992px) {
+  .pricing__card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pricing__card {
+    width: 340px;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+}

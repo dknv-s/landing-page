@@ -34,3 +34,17 @@
 .about-1__list-item {
   line-height: 35px;
 }
+
+@media (max-width: 992px) {
+  .about-1__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-1__on-phone-view {
+    width: 520px
+  }
+  .about-1__content-wrapper {
+    width: 80%;
+    padding-bottom: 40px;
+  }
+}

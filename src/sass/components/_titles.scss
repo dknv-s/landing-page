@@ -9,6 +9,10 @@
   color: $dark-color;
   font-size: 36px;
   font-weight: 600;
+
+  &--white {
+    color: #fff;
+  }
 }
 
 .pre-title {

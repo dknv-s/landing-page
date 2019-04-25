@@ -52,6 +52,16 @@
   }
 }
 
+@keyframes slidein {
+  from {
+    margin-right: -100%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
 @media (max-width: 992px) {
   .page-header__wrapper {
     background: none;
@@ -69,6 +79,8 @@
     padding: 40px 0;
     width: 100vw;
     height: 240px;
+    animation-name: slidein;
+    animation-duration: 0.5s;
 
     .header__nav-link {
       display: block;

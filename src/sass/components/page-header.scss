@@ -25,6 +25,12 @@
   margin-left: 24px;
 }
 
+.header__menu-button {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+}
+
 .page-header__content-wrap {
   max-width: 480px;
   padding-top: 60px;
@@ -49,6 +55,14 @@
   .page-header__wrapper {
     background: none;
   }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-button {
+    display: block;
+  }  
 
   .page-header__content-wrap {
     margin: 0 auto;

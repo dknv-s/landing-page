@@ -29,6 +29,7 @@
   display: none;
   font-size: 24px;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .page-header__content-wrap {
@@ -45,7 +46,7 @@
 
 .page-header__button {
   margin-top: 60px;
-  
+
   &:first-of-type {
     margin-right: 20px;
   }
@@ -56,13 +57,35 @@
     background: none;
   }
 
-  .header__nav {
+  .header {
+    position: relative;
+  }
+
+  .open-menu {
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    background-color: rgba($color: #000000, $alpha: .95);
+    padding: 40px 0;
+    width: 100vw;
+    height: 240px;
+
+    .header__nav-link {
+      display: block;
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  .header__nav-link {
     display: none;
   }
 
   .header__menu-button {
     display: block;
-  }  
+    position: relative;
+    z-index: 100;
+  }
 
   .page-header__content-wrap {
     margin: 0 auto;

@@ -51,7 +51,7 @@ function html() {
 function scssCompile() {
   return gulp.src(dirs.src.styles)
     .pipe(sass()
-    .on('error', sass.logError))
+      .on('error', sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(gulp.dest(dirs.build.styles))
     .pipe(browserSync.stream());
@@ -68,11 +68,19 @@ function watcher(done) {
   gulp.watch('./src/**/*.pug', gulp.series(html));
   gulp.watch('./src/sass/**/*.scss', gulp.series(scssCompile));
   gulp.watch(dirs.src.imgs, gulp.series(images));
+  gulp.watch(dirs.src.scripts, gulp.series(scripts));
   done();
 }
 
+/* Scripts */
+function scripts() {
+  return gulp.src(dirs.src.scripts)
+    .pipe(gulp.dest(dirs.build.scripts))
+    .pipe(browserSync.stream());
+}
+
 /* Tasks */
-const build = gulp.parallel(html, scssCompile, images);
+const build = gulp.parallel(html, scssCompile, images, scripts);
 const watch = gulp.series(build, browserSyncInit, watcher);
 
 exports.build = build;
